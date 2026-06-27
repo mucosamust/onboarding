@@ -1,0 +1,65 @@
+# MUST Computing Onboarding Sandbox 🎯
+
+Welcome to the sandbox! This repository exists for one reason: **to give you a safe space to practice Git and GitHub workflows without the fear of breaking anything.**
+
+If you have never opened a Pull Request (PR) before, this is exactly where you start.
+
+---
+
+## 🛠️ The Challenge: Leave Your Mark
+
+Your mission is to add your profile to our community roster file.
+
+### Step 1: Request Invitation
+Before you can push or open a PR inside the organization, ensure you are an official member. If you haven't been added yet, contact an admin or open an issue in this repository with your GitHub username.
+
+### Step 2: Set Up Locally
+Clone this repository to your development machine:
+
+```bash
+git clone [https://github.com/mucosamust/onboarding.git](https://github.com/your-org-name/onboarding.git)
+cd onboarding
+```
+
+### Step 3: Create a Branch
+
+Following our ```CONTRIBUTING.md``` guidelines, create a feature branch using your username:
+
+```bash
+git checkout -b feat/add-profile-yourusername
+```
+
+### Step 4: Add Your Details
+Open the file named ```ROSTER.md``` in your favorite editor (e.g., Neovim, VS Code).
+
+Append a new row to the table with your details. Use the format below:
+
+| Your Name | Tech Track / Interests | Favorite Tool/Editor |
+| :--- | :--- | :--- |
+| Jane Doe | Android Dev (Compose), Distributed Systems | Neovim |
+
+### Step 5: Commit and Push
+
+Stage your changes, commit using a descriptive message, and push your branch:
+
+```bash
+git add ROSTER.md
+git commit -m "feat(roster): add [Your Name] to community roster"
+git push origin feat/add-profile-yourusername
+```
+
+### Step 6: Open the PR
+
+Go to the main repository page on GitHub, click Compare & pull request, fill out a quick description, and submit. A peer or maintainer will review and merge it!
+
+## ⚠️ What if I encounter a Merge Conflict?
+
+If someone else edits ```ROSTER.md``` at the same time, GitHub might tell you that your branch has conflicts. Don't panic! This is a core part of learning Git:
+
+1. Pull the latest changes from main: ```git pull origin main```
+
+2. Open ```ROSTER.md```, look for the conflict markers (<<<<<<<, =======, >>>>>>>), choose how to combine the entries, and delete the markers.
+
+3. Commit the fix and push again.
+
+*You're officially on your way to becoming an open-source contributor! 🚀*
